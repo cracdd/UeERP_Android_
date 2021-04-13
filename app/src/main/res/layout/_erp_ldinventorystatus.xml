@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_10"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/_erp_ldtoolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_400">
+
+        <TableRow
+            android:padding="2dp">
+
+            <Button
+                android:id="@+id/statusinfo"
+                android:layout_width="207dp"
+                android:background="@color/blue_800"
+                android:text="재고현황"
+                android:textColor="#ffffff"
+                android:textSize="10pt"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/supplyinfo"
+                android:layout_width="207dp"
+                android:background="@color/blue_600"
+                android:text="재고수불부"
+                android:textColor="#ffffff"
+                android:textSize="10pt">
+
+            </Button>
+        </TableRow>
+
+
+    </TableLayout>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:scrollingCache="true">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1px"
+        android:background="#000000">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:background="#003399"
+                android:text="상품명"
+                android:textColor="#ffffff"
+                android:textSize="12pt"
+                android:gravity="center_horizontal"
+                android:padding="1px" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:background="#003399"
+                android:text="창고이름"
+                android:textColor="#ffffff"
+                android:textSize="12pt"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:background="#003399"
+                android:text="재고수량"
+                android:textColor="#ffffff"
+                android:textSize="12pt"
+                android:gravity="center_horizontal" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp">
+
+            <ListView
+                android:id="@+id/stock_list_2"
+                android:layout_width="match_parent"
+                android:layout_height="544dp"
+                android:layout_span="5"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingTop="5pt"
+                android:paddingBottom="5pt"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

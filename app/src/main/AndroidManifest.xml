@@ -32,6 +32,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".erp.MainActivity" />
+        <activity android:name=".erp.LdInvenSupplyList" />
+        <activity android:name=".erp.LdInvenStatusList" />
+        <activity android:name=".erp.HrCheckCardList" />
+        <activity android:name=".erp.HrWageDetailList" />
+        <activity android:name=".erp.AcFinancialList" />
+        <activity android:name=".erp.AcCalculationList" />
         <!-- 추가 End -->
         <!-- FCM 설정 시작 -->
         <service

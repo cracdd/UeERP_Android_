@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/_erp_ic_home"
+            android:title="HOME" />
+        <item
+            android:id="@+id/nav_hr"
+            android:icon="@drawable/_erp_ic_account_circle"
+            android:title="인사 관리" />
+        <item
+            android:id="@+id/nav_ld"
+            android:icon="@drawable/_erp_ic_airport_shuttle"
+            android:title="물류 관리" />
+        <item
+            android:id="@+id/nav_ac"
+            android:icon="@drawable/_erp_ic_attach_money"
+            android:title="회계 관리" />
+    </group>
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/_erp_ic_settings"
+            android:title="설정" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/_erp_ic_help"
+            android:title="도움말" />
+    </group>
+
+</menu>

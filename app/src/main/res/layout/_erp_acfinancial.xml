@@ -1,0 +1,425 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_10"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/_erp_actoolbar" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_400">
+
+        <TableRow
+            android:padding="2dp">
+
+            <Button
+                android:layout_width="207dp"
+                android:background="@color/blue_800"
+                android:text="재무상태표"
+                android:textColor="#ffffff"
+                android:textSize="10pt">
+
+            </Button>
+
+            <Button
+                android:id="@+id/calculation"
+                android:layout_width="207dp"
+                android:background="@color/blue_600"
+                android:text="손익계산서"
+                android:textColor="#ffffff"
+                android:textSize="10pt">
+
+            </Button>
+        </TableRow>
+
+
+    </TableLayout>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nested_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:scrollingCache="true">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_margin="3px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:background="#003399"
+                android:text="과목"
+                android:textColor="#ffffff"
+                android:textSize="12pt"
+                android:gravity="center_horizontal"
+                android:padding="1px" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:background="#003399"
+                android:text="금액"
+                android:textColor="#ffffff"
+                android:textSize="12pt"
+                android:gravity="center_horizontal" />
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="보통예금"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:id="@+id/finget"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="외상매입금"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:id="@+id/finget4"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="외상매출금"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:id="@+id/finget2"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="지급어음"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="받을어음"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="미지급금"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="미수금"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="예수금"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="상품"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:id="@+id/finget1"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="자본금"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="자산총계"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:id="@+id/finget5"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="323dp"
+            android:layout_height="160dp"
+            android:layout_margin="1px"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:gravity="center_horizontal"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:text="부채와 자본총계"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+            <TextView
+                android:id="@+id/finget6"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:paddingBottom="5pt"
+                android:paddingTop="5pt"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:textSize="8pt" />
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
