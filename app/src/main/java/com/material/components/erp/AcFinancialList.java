@@ -132,7 +132,7 @@ public class AcFinancialList extends AppCompatActivity {
                 GetVO m = gson.fromJson(s, GetVO.class);
 
                 TextView get = findViewById(R.id.finget);
-                get.setText("10000000");
+                get.setText("10,000,000");
                 TextView get1 = findViewById(R.id.finget1);
                 get1.setText(m.getGet1());
                 TextView get2 = findViewById(R.id.finget2);

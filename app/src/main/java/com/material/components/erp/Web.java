@@ -9,7 +9,7 @@ public class Web {
 
     // 크롬 실행 : http://localhost:8081/android/
     // ipconfig 확인.. 연결이 끊김으로 되어있으면 연결불가
-    public static String ip = "192.168.219.112"; //본인 IP
+    public static String ip = "192.168.219.122"; //본인 IP
     public static String servletURL = "http://" + ip + "/UsERP/"; // 연결할 JSP URL
 
 }

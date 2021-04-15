@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.gson.Gson;
 import com.material.components.R;
 
@@ -27,6 +28,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout._erp_login);
+
+        // 토큰 가져와서 Firebase에 입력
+        String msg = FirebaseInstanceId.getInstance().getToken();
+        System.out.println("msg : "+msg);
+        // 입력 끝
 
         edtId = (TextInputEditText) findViewById(R.id.edt_id);
         edtPwd = (TextInputEditText) findViewById(R.id.edt_pwd);
